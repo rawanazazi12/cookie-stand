@@ -2,7 +2,7 @@
 
 ## Salmon Cookies
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+I build a web page for Pat’s Salmon Cookies,to calculate the number of cookies each location must make every day so that it can manage its supplies inventory and baking schedule. The number of cookies to make depends on the hours of operation (6:00 AM to 8:00 PM for all locations).
 
 ### Author: Rawan Alazazi
 
@@ -12,3 +12,4 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Reflections and Comments
 
+ - It was a bit hard to finish this project with all requierements, it took a lot of time to be done.
