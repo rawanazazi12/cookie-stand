@@ -1,0 +1,11 @@
+table th td{
+
+
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+
+#salmon{
+
+    color: blue;
+}
