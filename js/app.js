@@ -2,10 +2,8 @@
 let container = document.getElementById('container');
 let table = document.createElement('table');
 container.appendChild(table);
-//
 let workingHours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00am', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 let shops = [];
-//
 function Shop(location, min, max, avgCookies) {
   this.Location = location;
   this.min = min;
@@ -15,6 +13,7 @@ function Shop(location, min, max, avgCookies) {
   this.cookisPerHour = [];
   this.totalCookies = 0;
   shops.push(this);
+
 }
 Shop.prototype.randomCust = function () {
   for (let i = 0; i < workingHours.length; i++) {
@@ -43,7 +42,7 @@ function creatingHeaderRow() {
   dailyhours.textContent = ('Daily Location Total');
 }
 
-creatingHeaderRow();
+
 
 Shop.prototype.render = function () {
   let tableData = document.createElement('tr');
@@ -68,16 +67,11 @@ let seattle = new Shop('Seattle', 23, 65, 6.3);
 let tokyo = new Shop('Tokyo', 3, 24, 1.2);
 let dubai = new Shop('Dubai', 11, 38, 3.7);
 let paris = new Shop('Paris', 20, 38, 2.3);
-let lima = new Shop('Lima', 23, 65, 6.3);
-seattle.calc();
-tokyo.calc();
-dubai.calc();
-paris.calc();
-lima.calc();
+let lima = new Shop('Lima', 2, 16, 4.6);
 
 
+let footerRow = document.createElement('tr');
 function creatingFooterRow() {
-  let footerRow = document.createElement('tr');
   table.appendChild(footerRow);
   let firstFooterTh = document.createElement('th');
   footerRow.appendChild(firstFooterTh);
@@ -100,6 +94,12 @@ function creatingFooterRow() {
   lastTh.textContent = totalOfTotal;
 }
 
+seattle.calc();
+tokyo.calc();
+dubai.calc();
+paris.calc();
+lima.calc();
+creatingHeaderRow();
 seattle.render();
 tokyo.render();
 dubai.render();
@@ -107,6 +107,29 @@ paris.render();
 lima.render();
 creatingFooterRow();
 
+let shopsForm = document.getElementById('shopsForm');
+shopsForm.addEventListener('submit', submitting);
+function submitting(event) {
+  event.preventDefault();
+  let name = event.target.nameField.value;
+  console.log(name);
+  let min = event.target.minCustomersField.value;
+  min=Number(min);
+  console.log(min);
+  let max = event.target.maxCustomersField.value;
+  max=Number(max);
+  console.log(max);
+  let avg = event.target.avgCookiesField.value;
+  avg=Number(avg);
+  console.log(avg);
+  let addedShop = new Shop(name, min, max, avg);
+  addedShop.randomCust();
+  addedShop.cookiesHourly();
+  addedShop.calc();
+  footerRow.textContent='';
+  addedShop.render();
+  creatingFooterRow();
+}
 
 
 // *************************************************************** LAB 06**************************************************

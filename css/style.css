@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 table, th, td{
-
-
+    text-align: center;
     border: solid black 1px;
     border-collapse: collapse;
 }
+#shposForm fieldset{
+
+    border: black;
+}
+
 body{
     background-color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
