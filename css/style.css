@@ -1,51 +1,280 @@
 *{
     box-sizing: border-box;
+
 }
+
 table, th, td{
     text-align: center;
-    border: solid black 1px;
+    border: solid rgb(168, 176, 235) 1px;
     border-collapse: collapse;
+    background-color: rgb(210, 203, 243);
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(105, 76, 105);
+    font-family: 'Geneva';
 }
-#shposForm fieldset{
-
-    border: black;
+#salesbody{
+    background-color: rgb(243, 243, 243);
+}
+#salesheader{
+    background-color: rgb(225, 205, 235);
+    height: 100px;
+}
+#salesheader nav{
+    padding-top: 40px;
+    
 }
 
 body{
-    background-color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(239, 242, 245);
     
-}
+    
+}    
+header{
+    background-color: #cedbf0; 
+    height: 160px;
+    width: 100%;
+    margin-bottom:2%;
+    
+}  
+header nav{
+  position: relative;
+  padding-top:1%;
+  font-size: 16px;
+  font-family:comic sans ms; 
+  float: left;
+  padding-left:1%;
+}   
 
 header h1{
-
+    
     text-align: center;
     font-size: 28px;
-    padding-top: 20px;
     font-weight: bold;
+    color: rgb(43, 25, 43);
+    font-family: 'Gorditas';
+    text-align: center;
+    padding-top: 4%;
+    font-size: 40px;
+}    
+#logo{
+    float: right;
+    position: relative;
+    right: 0px;
+    top:-94px;
+}    
+nav ul li a{
+text-decoration: none;    
+color: rgb(63, 46, 63);
+padding-top: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
+}
+#intro h2{
+position: relative;    
+left: 25px;
+font-size: 20px;
+font-family: 'Lobster Two';
+color: rgb(36, 53, 85);
+font-weight: bold;
+    
 }
 
-nav ul li a{
-text-decoration: none;
-color: violet;
-padding-top: 20px;
+#intro marquee{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: -30px;    
+    background-color: rgb(181, 210, 223);
+    font-family: 'Merienda';
+    padding-right: 200px;
 }
-#image-container{
-height: 400px;
-width: 500px;
-display: inline-block;
+
+#family{
+
+    position: relative;
+    right: 300px;
+    left: 300px;
+}    
+#image-container1{
+display: inline;    
 padding-left: 20px;
 padding-top: 20px;
-padding-right: 20px;
+padding-right: 0px;
+position: relative;
+left: 150px;
+top: 10px;
 
 }
+
+#image-container2{
+    display: inline;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    position: relative;
+    left: 340px;
+    top: 20px;
+    
+    }
+
+ #shops{
+    position: relative;    
+    padding-top: 40px;
+    left: 25px;
+    font-size: 20px;
+    font-family: 'Lobster Two';
+    color: rgb(36, 53, 85);
+    font-weight: bold;
+
+
+    }
 
 #info{
- text-align: center;
+
+    position: relative;
+    left: 200px;
+   } 
+#first{
+
+    background-color: rgb(205, 227, 236);
+    height: 100px;
+    width: 300px;
+    position: relative;
+    left: 300px;
+    top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+#first h2{
+font-family: 'Parisienne';
+font-size: 25px;
+color: rgb(104, 83, 104);
+font-weight: bold;
+}
+#first ul li{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 92, 104);
+    padding-top: 3px;
 }
 
-
-.first {
     
-    font-weight: bold;
+#second{
+
+    background-color: rgb(220, 234, 240);
+    height: 100px;
+    width: 300px;
+    position: relative;
+    left: 100px;
+    top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
 }
+#second h2{
+font-family: 'Parisienne';
+font-size: 25px;
+color: rgb(104, 83, 104);
+font-weight: bold;
+}
+#second ul li{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 92, 104);
+    padding-top: 3px;
+}
+    
+#third{
+
+    background-color: rgb(205, 227, 236);
+    height: 100px;
+    width: 300px;
+    position: relative;
+    left: 300px;
+    top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+#third h2{
+font-family: 'Parisienne';
+font-size: 25px;
+color: rgb(104, 83, 104);
+font-weight: bold;
+}
+#third ul li{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 92, 104);
+    padding-top: 3px;
+}
+#fourth{
+
+    background-color: rgb(220, 234, 240);
+    height: 100px;
+    width: 300px;
+    position: relative;
+    left: 100px;
+    top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+#fourth h2{
+font-family: 'Parisienne';
+font-size: 25px;
+color: rgb(104, 83, 104);
+font-weight: bold;
+}
+#fourth ul li{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 92, 104);
+    padding-top: 3px;
+}    
+
+#fifth{
+
+    background-color: rgb(202, 223, 233);
+    height: 100px;
+    width: 300px;
+    position: relative;
+    left: 300px;
+    top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+#fifth h2{
+font-family: 'Parisienne';
+font-size: 25px;
+color: rgb(104, 83, 104);
+font-weight: bold;
+}
+#fifth ul li{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(104, 92, 104);
+    padding-top: 3px;
+}    
+
+ footer {
+  color: #7bafb3;
+ margin-top: 5%;
+ font-size: 13px;
+ margin-bottom: 1%;
+    
+}
+    
+    
+    
+      
